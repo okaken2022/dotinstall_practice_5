@@ -1,0 +1,75 @@
+/* comonn */
+/* small screen */
+body {
+  magrin: 0;
+}
+section {
+  /* width: 599px; */
+  display: flex;
+  flex-direction: column;
+}
+.ad1 {
+  display: none;
+}
+.ad2 {
+  display: none;
+}
+
+.image {
+  background: pink;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+.text {
+  background: silver;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+
+
+/* medium screen */
+@media (min-width: 600px) {
+  section {
+  display: flex;
+  flex-direction: row;
+  }
+  .image {
+    height: 100px;
+    width: 200px;
+  }
+  .text {
+    height: 100px;
+    flex: 1;
+  }
+}
+
+
+/* large screen */
+@media (min-width: 800px) {
+  section {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .ad1 {
+    display: block;
+    background: plum;
+    width: 160px;
+  }
+}
+
+/* most large screen */
+@media (min-width: 1000px) {
+  section {
+    width: 1000px;
+    margin: 0 auto;
+  }
+  .ad2 {
+    display: block;
+    background: green;
+    width: 160px;
+  }
+}
+
